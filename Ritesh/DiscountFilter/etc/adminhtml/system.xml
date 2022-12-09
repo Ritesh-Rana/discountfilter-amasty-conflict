@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- Ritesh Rana -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>
+        <tab id="discountFilter" translate="label" sortOrder="500">
+            <label>Discount Filter</label>
+        </tab>
+        <section id="discountFiltered" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Settings</label>
+            <tab>discountFilter</tab>
+            <resource>Ritesh_DiscountFilter::Ritesh_discountfilter</resource>
+            <group id="discountFilterGroup" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Custum Range of Discount</label>
+                <field id="isEnableDisable" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Discount Filter</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="startPercent" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <comment>Set stating for percent discount</comment>
+                    <label>Start</label>
+                </field>
+                <field id="rangeInterval" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <comment>Set interval for percent discount</comment>
+                    <label>Gap</label>
+                </field>
+                <field id="endPercent" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <comment>Set ending for percent discount</comment>
+                    <label>End</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

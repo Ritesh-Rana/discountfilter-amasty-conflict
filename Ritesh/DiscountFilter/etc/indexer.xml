@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Indexer/etc/indexer.xsd">
+    <indexer id="ritesh_discount_filter_sorting_indexer" view_id="ritesh_discount_filter_sorting_indexer" class="Ritesh\DiscountFilter\Model\Indexer\Index">
+        <title translate="true">Sigma Discount Filter Sorting</title>
+        <description translate="true">Advanced Discount Filter Indexer</description>
+    </indexer>
+</config>
